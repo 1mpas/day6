@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+		table {
+			margin: auto;
+			border-collapse: collapse;
+			background-color: #dfeaf7;
+		}
+		table, th, td {
+			border: 2px solid;
+		}
+		th, td {
+			text-align: left;
+			vertical-align: top;
+			width: 97px;
+		}
+		td:hover {
+			background-color: #fff;
+		}
+
+		th {
+			font-style: italic;
+			background-color: #c2d6d6;
+		}
+		tfoot td {
+			font-style: italic;
+			background-color: #c2d6d6;
+		}
+		caption {
+			padding-bottom: 10px;
+			text-align: center;
+			font-family: monospace;
+			font-size: 15px;
+			font-style: italic;
+		}
+		.wrapper {
+			padding-bottom: 50px;
+		}
+
+		.some-pic__i {
+			text-align: center;
+			margin: 30px 0 15px 0;
+		}
+
+		.some-text__i {
+			text-align: center;
+		}
+
+		.note__i p {
+			display: inline-block;
+			width: 300px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__i">
+				<div class="title">
+					<title__i>
+						<h1>Table</h1>
+					</title__i>
+				</div>
+			</div>
+		</header>
+		<main class="content">
+			<div class="content__i">
+				<div class="main-table">
+					<div class="main-table__i">
+						<table>
+							<caption>Загаловак с паддинг боттом!</caption>
+							<thead>
+								<tr>
+									<th>№</th>
+									<th>Наименование</th>
+									<th>Вес</th>
+									<th>Примечание</th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<td>№</td>
+									<td>Наименование</td>
+									<td>Вес</td>
+									<td>Примечание</td>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Intel 1</td>
+									<td colspan="2">N\A</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Intel 2</td>
+									<td rowspan="2">15</td>
+									<td>YOLO 2</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Intel 3</td>
+									<td>YOLO 3</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Intel 4</td>
+									<td>20</td>
+									<td>YOLO 4</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Intel 5</td>
+									<td>10</td>
+									<td>YOLO 5</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Intel 6</td>
+									<td>11</td>
+									<td rowspan="2">Примечание!</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Intel 7</td>
+									<td>12</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>Intel 8</td>
+									<td rowspan="3">30</td>
+									<td>Примечание 1</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>Intel 9</td>
+									<td>Примечание 2</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>Intel 10</td>
+									<td>Примечание 3</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</main>
+		<article class="note">
+			<div class="note__i">
+				<div class="some-pic">
+					<div class="some-pic__i">
+						<img src="http://жбф.рф/images/other/sad_cat/sad_cat_03.jpg" alt="Sad cat" width="300px">
+					</div class="some-pic__i">
+				</div class="some-pic">
+				<div class="some-text">
+					<div class="some-text__i"><p>Хотел сделать hover на tr, но из за collspan'ov и rowspan'ov он работает некорректно...</p></div>
+				</div>
+			</div>
+		</article>
+</body>
+</html>
